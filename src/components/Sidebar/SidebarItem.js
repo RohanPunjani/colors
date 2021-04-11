@@ -4,11 +4,11 @@ import {Link} from 'react-router-dom';
 
 function SidebarItem(props) {
     return (
-        <Link className={props.isActive ? "sidebar-item active" : "sidebar-item"} >
+        <Link className={props.isActive ? "sidebar-item active" : "sidebar-item"} to={props.linkHref} >
             <div className="sidebar-item-icon-container">
                 <FeatherIcon className="sidebar-item-icon" icon={props.icon}/>
             </div>
-            <div className="sidebar-item-link" to={props.linkHref}>{props.linkText}</div>
+            <div className="sidebar-item-link">{props.linkText}</div>
         </Link>
     )
 }
