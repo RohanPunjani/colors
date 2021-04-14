@@ -7,9 +7,12 @@
 }
 
 /* Basic Styles Start */
-body{
+html,body{
+    min-height: 100vh;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
+    background: #fcf0eb 
 }
 
 .App{
@@ -18,12 +21,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: auto;
+    padding: 2vh 0;
     background: #fcf0eb 
 }
 
 .Dashboard{
-    min-height: 90vh;
+    height: auto;
     width: 94vw;
     background: white;
     border-radius: 40px;
@@ -38,6 +42,9 @@ body{
     font-family: 'Poppins', sans-serif;
     text-align: center;
     padding-top: 40px;
+    position: sticky;
+    top: 40px;
+    height: 100vh;
 }
 .Sidebar .logo{
     font-size: 2rem;
@@ -141,8 +148,7 @@ body{
 }
 
 .dynamic-content{
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0 40px;
 }
 .dynamic-content h2{
     margin: 0;
@@ -151,7 +157,7 @@ body{
     display: flex;
 }
 .dynamic-content .subtitle-links > div{
-    padding: 10px 20px 10px 0;
+    padding: 0 20px 10px 0;
     color: rgba(0,0,0,.5);
     cursor: pointer;
 }
@@ -169,6 +175,7 @@ body{
 .story{
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
 }
 .story img{
     width: 100%;
@@ -182,23 +189,30 @@ body{
     color: rgba(0,0,0,.7)
 }
 
-
-
-
-.transaction-stats .transaction-subtitle{
-    color: rgba(0,0,0,.5)
+.transaction-stats{
+    padding: 0 40px 0 0;
 }
-.payment-cards{
+.subtitle-text{
+    color: rgba(0,0,0,.5);
+    padding-bottom: 10px;
+}
+.responsive-img {
+    width: 100%;
+    height: auto;
+}
+.stats-data-container{
     display: flex;
-    margin-top: 20px;
-    border-radius: 30px;
-    height: 200px;
-    width: 390px;
-    background: url('./mastercard.png');
-    box-shadow: 0 5px 10px 0 #c095bc6c;
-    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0) 80%, rgba(0,0,0,0.2));
+    justify-content: space-between;
+    align-items: center;
 }
-
+.stats-data-container .stat{
+    text-align: center
+}
+.stats-data-container .stat .subtitle-text{
+    padding: 0;
+    margin-top: -7px;
+    font-size: 10px;
+}
 
 
 /* Main Content Container ends */
