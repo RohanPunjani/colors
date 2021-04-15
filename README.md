@@ -1,3 +1,18 @@
+# Repo Info
+
+I tried practising Front end skills by trying to imitate the design of dashboards found in dribbble.
+
+![](https://cdn.dribbble.com/users/1615584/screenshots/14119591/media/481f74ce775606c4fcdc9129437cedaf.jpg)
+
+This UI is made by Ghulam Rasool from Cuberto
+
+
+# Todo
+
+- [ ] Responsive UI
+- [ ] Sticky Sidebar
+- [ ] Adding DatePicker for the eventDates
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
