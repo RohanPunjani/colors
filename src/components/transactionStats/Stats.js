@@ -1,5 +1,6 @@
 import React from 'react'
 import { Line } from 'react-chartjs-2'
+import RatePercentage from './RatePercentage'
 import StatsData from './StatsData'
 
 function Stats() {
@@ -72,6 +73,7 @@ function Stats() {
             </div>
             <Line id="canvas" data={data} options={options} />
             <StatsData/>
+            <RatePercentage />
         </div>
     )
 }
