@@ -8,9 +8,11 @@ Click [here](http://dashboard-colors.netlify.app) to see the Live Preview
 
 This UI is made by Ghulam Rasool from Cuberto and you can check more dribbble shots [here](https://dribbble.com/shots/14119591-Dashboard-UX-UI-Design)
 
+![Mobile View](https://user-images.githubusercontent.com/48467821/114860269-69b07b80-9e09-11eb-9097-2158449f3bdf.jpg)
+
 # Todo
 
-- [ ] Responsive UI
+- [x] Responsive UI DONE ✔
 - [ ] Sticky Sidebar
 - [ ] Adding DatePicker for the eventDates
 
