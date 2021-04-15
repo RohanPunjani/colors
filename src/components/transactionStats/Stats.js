@@ -66,13 +66,15 @@ function Stats() {
         return index === 3  ? 8 : 0;
     }
     return (
-        <div>
-            <h2>Audience Overview</h2>
-            <div className="subtitle-text">
-                Business Graph With Stats
+        <div className="stats">
+            <div className="chartGraph">
+                <h2>Audience Overview</h2>
+                <div className="subtitle-text">
+                    Business Graph With Stats
+                </div>
+                <Line id="canvas" data={data} options={options} />
+                <StatsData/>
             </div>
-            <Line id="canvas" data={data} options={options} />
-            <StatsData/>
             <RatePercentage />
         </div>
     )

@@ -36,6 +36,8 @@ html,body{
 }
 /* Basic Styles Ends */
 
+@media only screen and (max-width: 880px){
+}
 
 /* Sidebar Styles Starts */
 .Sidebar{
@@ -71,6 +73,12 @@ html,body{
 .sidebar-item-link{
     font-weight: 500;
     font-size: 10px;
+}
+
+@media only screen and (max-width: 880px){
+    .sidebar-item-link{
+        display: none;
+    }
 }
 .sidebar-item.active .sidebar-item-icon-container{
     background: #fcf0eb;
@@ -142,7 +150,6 @@ html,body{
     font-family: 'Poppins', sans-serif;
     max-width: calc(94vw - 200px);
 }
-
 .content-container h2{
     color: rgba(0,0,0,.7);
 }
@@ -276,7 +283,7 @@ html,body{
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: minmax(80px,25%) auto;
+    grid-template-columns: 80px auto;
     width: 100%;
     border-radius: 20px;
     border: 1px solid grey;
@@ -284,9 +291,91 @@ html,body{
 }
 
 .event-card svg{
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     height: auto;
+    max-height: 80px;
 }
 
+
+@media only screen and (max-width: 1024px) {
+    .card-container{
+        grid-template-columns: none;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .Dashboard{
+        grid-template-columns: 100px 1fr;
+    }
+    .content-container{
+        max-width: calc(94vw - 100px);
+    }
+    .rate-percentage-container h1{
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 14px;
+    }
+    .subtitle-text,.subtitle-links{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .content-container{
+        grid-template-columns: 100%;
+    }
+    .dynamic-content{
+        order: 2;
+    }
+    .transaction-stats{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10px 20px;
+    }
+    .stats{
+        display: flex;
+        justify-content: space-between;
+    }
+    /* .rate-percentage-container{
+        display: none;
+    } */
+    .inputBox input{
+        display: none;
+    }
+    .inputBox{
+        background-color: white;
+        margin-left: auto;
+        padding-left: 0;
+        padding: 0 20px;
+    }
+    .Navbar{
+        width: calc(94vw - 100px);
+        justify-content: end;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .rate-percentage-container{
+        display: none;
+    }
+    .chartGraph{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 481px) {
+    .rate-percentage-container{
+        display: none;
+    }
+    .chartGraph{
+        width: 100%;
+    }
+    .event-card{
+        display: flex;
+        flex-direction: column;
+    }
+}
 /* Main Content Container ends */
