@@ -331,6 +331,7 @@ html,body{
     }
     .dynamic-content{
         order: 2;
+        padding: 0 20px;
     }
     .transaction-stats{
         display: flex;
