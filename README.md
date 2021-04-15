@@ -1,11 +1,12 @@
 # Repo Info
 
-I tried practising Front end skills by trying to imitate the design of dashboards found in dribbble.
+I tried practising Front end skills by trying to imitate the design of dashboards. 
+
+Click [here](http://dashboard-colors.netlify.app) to see the Live Preview
 
 ![](https://cdn.dribbble.com/users/1615584/screenshots/14119591/media/481f74ce775606c4fcdc9129437cedaf.jpg)
 
-This UI is made by Ghulam Rasool from Cuberto
-
+This UI is made by Ghulam Rasool from Cuberto and you can check more dribbble shots [here](https://dribbble.com/shots/14119591-Dashboard-UX-UI-Design)
 
 # Todo
 
